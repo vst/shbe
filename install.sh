@@ -13,7 +13,7 @@ apt-get install -y --no-install-recommends apt-transport-https
 echo "deb https://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
 apt-get update
-apt-get install -y --no-install-recommends nano vim mc sbt build-essential fakeroot devscripts
+apt-get install -y --no-install-recommends nano vim mc sbt build-essential fakeroot devscripts dpkg-sig lintian
 
 ## Run `sbt` so that it performs the necessary downloads (see
 ## built.sbt and project/plugins.sbt for reference):
